@@ -1,4 +1,4 @@
-package week2.stack;
+package stacks.and.queues;
 
 public class FixedCapacityStackOfStrings {
 	

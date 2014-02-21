@@ -1,10 +1,5 @@
 package dynamic;
 
-import java.util.Arrays;
-
-import edu.princeton.cs.introcs.StdOut;
-
-
 public class QuickUnionUF extends UF
 {
 

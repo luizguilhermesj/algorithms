@@ -4,7 +4,7 @@ package dynamic;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-import utils.Helper;
+import main.Helper;
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 

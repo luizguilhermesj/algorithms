@@ -1,8 +1,8 @@
 package stacks.and.queues;
 
+import main.Helper;
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
-import utils.Helper;
 
 public class Tester {
 
@@ -10,6 +10,39 @@ public class Tester {
 	{
 		Helper.setFile("src//inputs//tobe.txt");
 		this.testFixedCapacityGenericStack();
+	}
+	public void basicStack(){
+		StackOfStrings stack = new StackOfStrings();
+		Helper.setFile("src//inputs//tobe.txt");
+		while(!StdIn.isEmpty()){
+			String s = StdIn.readString();
+			if(s.equals("-"))
+				StdOut.print(stack.pop()+" ");
+			else
+				stack.push(s);
+		}
+	}
+	public void fixedArray(){
+		FixedCapacityStackOfStrings stack = new FixedCapacityStackOfStrings(10);
+		Helper.setFile("src//inputs//tobe.txt");
+		while(!StdIn.isEmpty()){
+			String s = StdIn.readString();
+			if(s.equals("-"))
+				StdOut.print(stack.pop()+" ");
+			else
+				stack.push(s);
+		}
+	}
+	public void ResizingArray(){
+		ResizingArrayStackOfStrings stack = new ResizingArrayStackOfStrings();
+		Helper.setFile("src//inputs//tobe.txt");
+		while(!StdIn.isEmpty()){
+			String s = StdIn.readString();
+			if(s.equals("-"))
+				StdOut.print(stack.pop()+" ");
+			else
+				stack.push(s);
+		}
 	}
 	
 	public void testLinkedQueue()
