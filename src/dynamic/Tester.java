@@ -20,13 +20,7 @@ public class Tester{
 	
 	private void testQuickFind(){
 		StdOut.println("------- Quick Find");
-		
-		try {
-			System.setIn(new FileInputStream("src//inputs//quick-input.txt"));
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Helper.setFile("src//inputs//quick-input.txt");
 		
 		int N = StdIn.readInt();
 		QuickFindUF qf = new QuickFindUF(N);
@@ -42,13 +36,8 @@ public class Tester{
 	
 	private void testQuickUnion(){
 		StdOut.println("------- Quick Union");
-
-		try {
-			System.setIn(new FileInputStream("src//inputs//quick-union.txt"));
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Helper.setFile("src//inputs//quick-union.txt");
+		
 		int N = StdIn.readInt();
 		QuickUnionUF qu = new QuickUnionUF(N);
 		while (!StdIn.isEmpty())
