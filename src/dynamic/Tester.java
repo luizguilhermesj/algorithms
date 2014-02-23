@@ -11,7 +11,8 @@ import edu.princeton.cs.introcs.StdOut;
 
 
 
-public class Tester{
+public class Tester
+{
 
 	public void exec()
 	{

@@ -2,7 +2,8 @@ package stacks.and.queues;
 
 import java.util.Iterator;
 
-public class Stack<Item> implements Iterable<Item>{
+public class Stack<Item> implements Iterable<Item>
+{
 	
 	private Node first = null;
 	

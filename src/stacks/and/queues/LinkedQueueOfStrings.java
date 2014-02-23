@@ -1,6 +1,7 @@
 package stacks.and.queues;
 
-public class LinkedQueueOfStrings {
+public class LinkedQueueOfStrings
+{
 
 	private Node first, last;
 	

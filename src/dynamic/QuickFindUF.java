@@ -1,6 +1,7 @@
 package dynamic;
 
-public class QuickFindUF extends UF {
+public class QuickFindUF
+{
 
 	private int[] id;
 	

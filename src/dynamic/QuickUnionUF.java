@@ -1,6 +1,6 @@
 package dynamic;
 
-public class QuickUnionUF extends UF
+public class QuickUnionUF
 {
 
 	private int[] id;

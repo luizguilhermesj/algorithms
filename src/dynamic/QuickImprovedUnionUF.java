@@ -1,5 +1,6 @@
 package dynamic;
-public class QuickImprovedUnionUF {
+public class QuickImprovedUnionUF
+{
 
 	private int[] id;
 	private int[] sz;
