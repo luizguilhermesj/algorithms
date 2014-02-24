@@ -2,6 +2,9 @@ package main;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
+
+import edu.princeton.cs.introcs.StdOut;
 
 
 public class Helper {
@@ -13,5 +16,12 @@ public class Helper {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public static void printArray(Comparable[] a, int i){
+		StdOut.print(i+": ");
+		for (Comparable item : a)
+			StdOut.print(item.toString()+ ' ');
+		StdOut.println();
 	}
 }
